@@ -1,0 +1,269 @@
+body{
+    background-image: url("../images/circles-light.png");
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3{
+    color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+p{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+.sticky{
+    min-height: calc(100vh - 55px);
+}
+
+/* Header Section*/
+
+#headerWrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    
+}
+
+#mainLogo{
+    background-color: #4aaaa5;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 10px;
+}
+
+#menu{
+    display: inline-block;
+    float: right;
+}
+
+nav a.current{
+    color: blue;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#777;
+}
+
+nav a:hover{
+    color: black;
+}
+
+nav a:active{
+    color: gold;
+}
+
+/*Main Content Section*/
+
+#mainImage{
+    width: 150px;
+}
+
+#mainContentWrapper{
+    width: 960px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+
+.aboutMe{
+    border-bottom: 2px solid #666666;
+}
+
+img{
+    width: 250px;
+    margin-right: 15px;
+    box-shadow: 5px 3px 10px 6px #888888;
+    float: left;
+}
+
+#aboutMeWrapper{
+    margin: 15px 15px 15px;
+    overflow: auto;
+    position: relative;
+}
+/*-----FOOTER------*/
+
+footer{
+    background-color: #666666;
+    color: #fff;
+    height: 55px;
+    text-align: center;
+    clear: both;
+}
+
+#outerFooter{
+    background-color: #4aaaa5;
+    height: 55px;
+    padding-top: 10px;
+    text-align: center;
+    clear: both;
+
+}
+
+/*-----CONTACT PAGE CSS------*/
+
+#nameBlock,
+#emailBlock,
+#messageBlock{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#submitButton{
+    background-color: #4aaaa5;
+    padding: 5px 10px;
+}
+
+/*-----PORTFOLIO PAGE CSS------*/
+
+.imageTable{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+}
+
+.imageTable img{
+    opacity: .5;
+    margin-bottom: 5px;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+#td1,
+#td2,
+#td3,
+#td4,
+#td5{
+    position: relative;
+}
+
+.textBlock{
+    position: absolute;
+    top: 60%;
+    width: 94%;
+    height: 40px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  img {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* MQ'S*/
+
+@media screen and (max-width : 980px ) {
+    #mainContentWrapper{
+        width: 750px;
+        float: left;
+    }
+}
+
+@media screen and (max-width : 768px ) {
+    #mainImage{
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    #mainContentWrapper,
+    #headerWrapper{
+        width: 650px;
+    }
+
+    #menu{
+        margin-right: 60px;
+    }
+
+    img{
+        float: none;
+        display: block;
+        width: 295px;
+    }
+}
+
+@media screen and (max-width : 640px ) {
+    #menu{
+        display: block;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    header{
+        position: static;
+    }
+
+    #mainImg{
+        float: none;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    #mainContentWrapper{
+        width: 560px;
+    }
+
+    #mainLogo{
+    width: 100%;
+    text-align: center;
+    }
+
+    #td1,
+    #td2,
+    #td3,
+    #td4,
+    #td5{
+    display: block;
+    margin-bottom: 15px;
+    }
+
+
+    #mainContentWrapper{
+        width: 350px;
+        margin-left: 150px;
+        line-height: 1.5;
+    }
+}
